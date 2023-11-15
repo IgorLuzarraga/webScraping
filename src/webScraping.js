@@ -1,7 +1,14 @@
 import { launch } from "puppeteer";
-import { writeScrapingResult, writeScrapingResultCurried } from "./utils/files.js";
-import { filterByCommentsDesc, filterByPointsAsc, partitionByFiveWords } from "./utils/filters.js";
-import _ from 'lodash';
+import {
+  writeScrapingResult,
+  writeScrapingResultCurried,
+} from "./utils/files.js";
+import {
+  filterByCommentsDesc,
+  filterByPointsAsc,
+  partitionByFiveWords,
+} from "./utils/filters.js";
+import _ from "lodash";
 
 const scrapp = async () => {
   try {
@@ -68,18 +75,23 @@ const scrapp = async () => {
 
 // Filter and write to file the scraping web result
 const processScrapingResult = (result, fileName) => {
-  const [moreThanFiveWords, lessThanOrEqualFiveWords] = partitionByFiveWords(result);
+  const [moreThanFiveWords, lessThanOrEqualFiveWords] =
+    partitionByFiveWords(result);
 
   // Filter scraping result by comments (descending order)
   _.flow(
     filterByCommentsDesc,
-    writeScrapingResultCurried(fileName.concat('_more_than_5_words_sortedByComments_desc'))
+    writeScrapingResultCurried(
+      fileName.concat("_more_than_5_words_sortedByComments_desc"),
+    ),
   )(moreThanFiveWords);
 
   // Filter scraping result by points (ascending order)
   _.flow(
     filterByPointsAsc,
-    writeScrapingResultCurried(fileName.concat('_less_or_equal_than_5_words_sortedByPoints_asc'))
+    writeScrapingResultCurried(
+      fileName.concat("_less_or_equal_than_5_words_sortedByPoints_asc"),
+    ),
   )(lessThanOrEqualFiveWords);
 
   return writeScrapingResult(result, fileName);
