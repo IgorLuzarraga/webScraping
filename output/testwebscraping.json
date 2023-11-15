@@ -1,33 +1,51 @@
 [
   {
-    "order": "38259148",
-    "title": "I accidentally a scheme",
-    "points": "179",
-    "comments": "87"
+    "order": "38273999",
+    "title": "Curl on 100 Operating Systems",
+    "points": "115",
+    "comments": "46"
+  },
+  {
+    "order": "38274782",
+    "title": "Hacking ADHD: Strategies for the modern developer",
+    "points": "228",
+    "comments": "213"
   },
   {
     "order": "38271155",
     "title": "Why do people still use VBA?",
-    "points": "178",
-    "comments": "200"
+    "points": "206",
+    "comments": "233"
+  },
+  {
+    "order": "38259148",
+    "title": "I accidentally a scheme",
+    "points": "193",
+    "comments": "94"
   },
   {
     "order": "38271702",
     "title": "ARRL hails FCC action to remove symbol rate restrictions",
-    "points": "174",
-    "comments": "96"
-  },
-  {
-    "order": "38272162",
-    "title": "The Architecture of Serverless Data Systems",
-    "points": "105",
-    "comments": "29"
+    "points": "181",
+    "comments": "102"
   },
   {
     "order": "38270714",
     "title": "Writing a GPT-4 script to check Wikipedia for the first unused acronym",
-    "points": "187",
-    "comments": "56"
+    "points": "203",
+    "comments": "60"
+  },
+  {
+    "order": "38271534",
+    "title": "Detexify: LaTeX Handwriting Symbol Recognition",
+    "points": "136",
+    "comments": "27"
+  },
+  {
+    "order": "38272162",
+    "title": "The Architecture of Serverless Data Systems",
+    "points": "111",
+    "comments": "32"
   },
   {
     "order": "38275791",
@@ -36,147 +54,129 @@
     "comments": "0"
   },
   {
-    "order": "38271534",
-    "title": "Detexify: LaTeX Handwriting Symbol Recognition",
-    "points": "132",
-    "comments": "22"
-  },
-  {
-    "order": "38274782",
-    "title": "Hacking ADHD: Strategies for the modern developer",
-    "points": "155",
-    "comments": "120"
+    "order": "38262628",
+    "title": "Scientist: A Ruby library for carefully refactoring critical paths",
+    "points": "118",
+    "comments": "15"
   },
   {
     "order": "38274568",
     "title": "Orthodox Privilege (2020)",
-    "points": "60",
-    "comments": "69"
-  },
-  {
-    "order": "38262628",
-    "title": "Scientist: A Ruby library for carefully refactoring critical paths",
-    "points": "107",
-    "comments": "15"
+    "points": "68",
+    "comments": "82"
   },
   {
     "order": "38259991",
     "title": "Thermal transistors handle heat with no moving parts",
-    "points": "68",
+    "points": "70",
     "comments": "42"
-  },
-  {
-    "order": "38272132",
-    "title": "U.S. reenters the nuclear fuel game",
-    "points": "299",
-    "comments": "312"
   },
   {
     "order": "38266773",
     "title": "Reptar",
-    "points": "505",
-    "comments": "159"
+    "points": "516",
+    "comments": "160"
   },
   {
-    "order": "38273999",
-    "title": "Curl on 100 Operating Systems",
-    "points": "97",
-    "comments": "36"
-  },
-  {
-    "order": "38259100",
-    "title": "Julia Child's Culinary Notes",
-    "points": "73",
-    "comments": "28"
+    "order": "38257776",
+    "title": "Mary Beard traces the profile of the Roman emperor",
+    "points": "8",
+    "comments": "0"
   },
   {
     "order": "38274872",
     "title": "Use Timestamps",
-    "points": "145",
-    "comments": "89"
+    "points": "171",
+    "comments": "102"
   },
   {
-    "order": "38266387",
-    "title": "Kathleen Sully, the Vanished Novelist (2022)",
-    "points": "99",
-    "comments": "14"
+    "order": "38276209",
+    "title": "Don't Spy EU",
+    "points": "38",
+    "comments": "3"
+  },
+  {
+    "order": "38272132",
+    "title": "U.S. reenters the nuclear fuel game",
+    "points": "311",
+    "comments": "333"
+  },
+  {
+    "order": "38259100",
+    "title": "Julia Child's Culinary Notes",
+    "points": "80",
+    "comments": "36"
   },
   {
     "order": "38264641",
     "title": "GraphCast: AI model for weather forecasting",
-    "points": "543",
-    "comments": "176"
+    "points": "550",
+    "comments": "179"
+  },
+  {
+    "order": "38275925",
+    "title": "The Python Sofware Foundation Receives Wonderfully Welcoming Award from GitHub",
+    "points": "7",
+    "comments": "0"
   },
   {
     "order": "38262900",
     "title": "Around The World, Part 1: Continents",
-    "points": "52",
-    "comments": "3"
+    "points": "53",
+    "comments": "5"
   },
   {
     "order": "38270552",
     "title": "Is the reversal curse in LLMs real?",
-    "points": "194",
-    "comments": "141"
+    "points": "201",
+    "comments": "150"
   },
   {
     "order": "38272495",
     "title": "Beyond Memorization: Violating privacy via inference with LLMs",
-    "points": "91",
-    "comments": "47"
+    "points": "94",
+    "comments": "48"
   },
   {
     "order": "38273608",
     "title": "Haiku Activity and Contract Report, October 2023",
-    "points": "43",
-    "comments": "4"
-  },
-  {
-    "order": "38275060",
-    "title": "Gut epithelial barrier damage caused by dishwasher detergents and rinse aids",
-    "points": "140",
-    "comments": "83"
+    "points": "47",
+    "comments": "5"
   },
   {
     "order": "38261982",
     "title": "A decade of developing a programming language",
-    "points": "243",
-    "comments": "119"
-  },
-  {
-    "order": "38270265",
-    "title": "Inko Programming Language",
-    "points": "158",
-    "comments": "65"
-  },
-  {
-    "order": "38250459",
-    "title": "Placemark is going open source and shutting down",
-    "points": "538",
-    "comments": "128"
+    "points": "244",
+    "comments": "121"
   },
   {
     "order": "38270936",
     "title": "How Caterpillars Gruesomely Transform into Butterflies",
-    "points": "39",
-    "comments": "12"
+    "points": "51",
+    "comments": "22"
+  },
+  {
+    "order": "38275060",
+    "title": "Gut epithelial barrier damage caused by dishwasher detergents and rinse aids",
+    "points": "166",
+    "comments": "101"
+  },
+  {
+    "order": "38270265",
+    "title": "Inko Programming Language",
+    "points": "164",
+    "comments": "68"
+  },
+  {
+    "order": "38250459",
+    "title": "Placemark is going open source and shutting down",
+    "points": "545",
+    "comments": "128"
   },
   {
     "order": "38271959",
     "title": "ML for Beginners GitHub",
-    "points": "124",
-    "comments": "23"
-  },
-  {
-    "order": "38257794",
-    "title": "Starship will attempt a launch this Friday",
-    "points": "693",
-    "comments": "854"
-  },
-  {
-    "order": "38265773",
-    "title": "YJIT is the most memory-efficient Ruby JIT",
-    "points": "207",
-    "comments": "21"
+    "points": "133",
+    "comments": "26"
   }
 ]

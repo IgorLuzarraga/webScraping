@@ -1,7 +1,9 @@
 import fs from "fs";
 
+// Curried version
 // Write the scrapping results in a file
-const writeScrapingResult = (results, fileName) => {
+const writeScrapingResultCurried = (fileName) => (results) => 
+{
   const isNotEmpty = (obj) => Object.keys(obj).length !== 0;
   const itemsClean = results.filter(isNotEmpty);
 
@@ -30,4 +32,7 @@ const writeScrapingResult = (results, fileName) => {
   return results;
 };
 
-export { writeScrapingResult };
+// Write the scrapping results in a file
+const writeScrapingResult = (results, fileName) => writeScrapingResultCurried(fileName)(results)
+
+export { writeScrapingResult, writeScrapingResultCurried };

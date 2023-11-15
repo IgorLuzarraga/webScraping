@@ -1,6 +1,7 @@
 import { launch } from "puppeteer";
-import { writeScrapingResult } from "./utils/files.js";
+import { writeScrapingResult, writeScrapingResultCurried } from "./utils/files.js";
 import { filterByCommentsDesc, filterByPointsAsc, partitionByFiveWords } from "./utils/filters.js";
+import _ from 'lodash';
 
 const scrapp = async () => {
   try {
@@ -65,29 +66,21 @@ const scrapp = async () => {
   }
 };
 
+// Filter and write to file the scraping web result
 const processScrapingResult = (result, fileName) => {
-  const [moreThanFiveWords, lessThanOrEqualFiveWords] = partitionByFiveWords(result)
+  const [moreThanFiveWords, lessThanOrEqualFiveWords] = partitionByFiveWords(result);
 
-  const sortedMoreThanFiveWords = filterByCommentsDesc(moreThanFiveWords)
-  const sortedLessThanOrEqualFiveWords = filterByPointsAsc(lessThanOrEqualFiveWords)
+  // Filter scraping result by comments (descending order)
+  _.flow(
+    filterByCommentsDesc,
+    writeScrapingResultCurried(fileName.concat('_more_than_5_words_sortedByComments_desc'))
+  )(moreThanFiveWords);
 
-  console.log(
-    "More than five words, ordered by comments:",
-    sortedMoreThanFiveWords,
-  );
-  console.log(
-    "Less than or equal to five words, ordered by points:",
-    sortedLessThanOrEqualFiveWords,
-  );
-
-  writeScrapingResult(
-    sortedMoreThanFiveWords,
-    fileName.concat("_more_than_5_words_sortedByComments_desc"),
-  );
-  writeScrapingResult(
-    sortedLessThanOrEqualFiveWords,
-    fileName.concat("_less_or_equal_than_5_words_sortedByPoints_asc"),
-  );
+  // Filter scraping result by points (ascending order)
+  _.flow(
+    filterByPointsAsc,
+    writeScrapingResultCurried(fileName.concat('_less_or_equal_than_5_words_sortedByPoints_asc'))
+  )(lessThanOrEqualFiveWords);
 
   return writeScrapingResult(result, fileName);
 };
