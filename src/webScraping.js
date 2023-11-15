@@ -1,7 +1,6 @@
 import { launch } from "puppeteer";
 import { writeScrapingResult } from "./utils/files.js";
-import { convertToNumber } from "./utils/general.js"
-import _ from "lodash";
+import { filterByCommentsDesc, filterByPointsAsc, partitionByFiveWords } from "./utils/filters.js";
 
 const scrapp = async () => {
   try {
@@ -36,7 +35,7 @@ const scrapp = async () => {
         const pointsText = scoreElement ? scoreElement.textContent : null;
         const points = pointsText
           ? pointsText.replace("points", "").trim()
-          : null;
+          : "0"; // Default to "0" if pointsText is falsy
 
         // Get the comments number
         const commentElement = nextSibling
@@ -54,7 +53,7 @@ const scrapp = async () => {
       });
     });
 
-    // Wait a litle bit to have some time to check for logs
+    // Wait a little bit to have some time to check for logs
     //await page.waitForTimeout(60000);
 
     await browser.close();
@@ -62,29 +61,15 @@ const scrapp = async () => {
     return results;
   } catch (error) {
     console.error("An error occurred:", error);
+    return []; // Return an empty array in case of an error
   }
 };
 
 const processScrapingResult = (result, fileName) => {
-  const [moreThanFiveWords, lessThanOrEqualFiveWords] = _.partition(
-    result,
-    (item) => {
-      const wordsInTitle = item.title.split(" ").length;
-      return wordsInTitle > 5;
-    },
-  );
+  const [moreThanFiveWords, lessThanOrEqualFiveWords] = partitionByFiveWords(result)
 
-  const sortedMoreThanFiveWords = _.orderBy(
-    moreThanFiveWords.map(convertToNumber),
-    ["comments"],
-    ["desc"],
-  );
-
-  const sortedLessThanOrEqualFiveWords = _.orderBy(
-    lessThanOrEqualFiveWords.map(convertToNumber),
-    ["points"],
-    ["asc"],
-  );
+  const sortedMoreThanFiveWords = filterByCommentsDesc(moreThanFiveWords)
+  const sortedLessThanOrEqualFiveWords = filterByPointsAsc(lessThanOrEqualFiveWords)
 
   console.log(
     "More than five words, ordered by comments:",
@@ -95,10 +80,16 @@ const processScrapingResult = (result, fileName) => {
     sortedLessThanOrEqualFiveWords,
   );
 
-  writeScrapingResult(sortedMoreThanFiveWords, fileName.concat('sortedByComments')); 
-  writeScrapingResult(sortedLessThanOrEqualFiveWords, fileName.concat('sortedByPoints'));
+  writeScrapingResult(
+    sortedMoreThanFiveWords,
+    fileName.concat("_more_than_5_words_sortedByComments_desc"),
+  );
+  writeScrapingResult(
+    sortedLessThanOrEqualFiveWords,
+    fileName.concat("_less_or_equal_than_5_words_sortedByPoints_asc"),
+  );
 
-  return writeScrapingResult(result, fileName); 
+  return writeScrapingResult(result, fileName);
 };
 
 export { scrapp, processScrapingResult };
