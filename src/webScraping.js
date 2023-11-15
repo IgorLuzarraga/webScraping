@@ -1,5 +1,5 @@
 import { launch } from "puppeteer";
-import { writeSrappingResult } from "./utils/files.js";
+import { writeScrapingResult } from "./utils/files.js";
 import { convertToNumber } from "./utils/general.js"
 import _ from "lodash";
 
@@ -65,7 +65,7 @@ const scrapp = async () => {
   }
 };
 
-const processScrappingResult = (result, fileName) => {
+const processScrapingResult = (result, fileName) => {
   const [moreThanFiveWords, lessThanOrEqualFiveWords] = _.partition(
     result,
     (item) => {
@@ -95,11 +95,10 @@ const processScrappingResult = (result, fileName) => {
     sortedLessThanOrEqualFiveWords,
   );
 
-  return writeSrappingResult(result, fileName);
+  writeScrapingResult(sortedMoreThanFiveWords, fileName.concat('sortedByComments')); 
+  writeScrapingResult(sortedLessThanOrEqualFiveWords, fileName.concat('sortedByPoints'));
+
+  return writeScrapingResult(result, fileName); 
 };
 
-// const processScrappingResult = (result, fileName) => {
-//   return writeSrappingResult(result, fileName);
-// };
-
-export { scrapp, processScrappingResult };
+export { scrapp, processScrapingResult };

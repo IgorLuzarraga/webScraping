@@ -1,5 +1,5 @@
 import assert from "assert";
-import { processScrappingResult, scrapp } from "../src/webScrapping.js";
+import { processScrapingResult, scrapp } from "../src/webScraping.js";
 import fs from "fs/promises";
 
 describe("scrapp function", function () {
@@ -10,7 +10,7 @@ describe("scrapp function", function () {
     const keyWord = "fileTestEx1";
 
     const results = await scrapp()
-      .then((result) => processScrappingResult(result, keyWord))
+      .then((result) => processScrapingResult(result, keyWord))
       .catch((error) => {
         console.error("Error:", error);
       });
@@ -25,7 +25,7 @@ describe("scrapp function", function () {
     const keyWord = "fileTestEx2";
 
     const results = await scrapp()
-      .then((result) => processScrappingResult(result, keyWord))
+      .then((result) => processScrapingResult(result, keyWord))
       .catch((error) => {
         console.error("Error:", error);
       });
@@ -46,7 +46,7 @@ describe("scrapp function", function () {
     const keyWord = "fileTestEx3";
 
     const results = await scrapp()
-      .then((result) => processScrappingResult(result, keyWord))
+      .then((result) => processScrapingResult(result, keyWord))
       .catch((error) => {
         console.error("Error:", error);
       });
@@ -76,7 +76,7 @@ describe("scrapp function", function () {
     const keyWord = "fileTestEx4";
 
     const results = await scrapp()
-      .then((result) => processScrappingResult(result, keyWord))
+      .then((result) => processScrapingResult(result, keyWord))
       .catch((error) => {
         console.error("Error:", error);
       });

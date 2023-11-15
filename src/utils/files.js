@@ -1,7 +1,7 @@
 import fs from "fs";
 
 // Write the scrapping results in a file
-const writeSrappingResult = (results, fileName) => {
+const writeScrapingResult = (results, fileName) => {
   const isNotEmpty = (obj) => Object.keys(obj).length !== 0;
   const itemsClean = results.filter(isNotEmpty);
 
@@ -30,4 +30,4 @@ const writeSrappingResult = (results, fileName) => {
   return results;
 };
 
-export { writeSrappingResult };
+export { writeScrapingResult };
