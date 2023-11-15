@@ -1,7 +1,6 @@
 import { launch } from 'puppeteer';
-import { writeSrappingResult } from './utils/files.js';
 
-const scrapp = async (keyWord) => {
+const scrapp = async () => {
     try{
         // Launch the browser (minimized) 
         const browser = await launch();
@@ -48,30 +47,11 @@ const scrapp = async (keyWord) => {
 
         await browser.close();
 
-        writeSrappingResult(results, keyWord);
-
         return results;
 
     } catch (error) {
         console.error("An error occurred:", error);
     }
 };
-
-// const startScrapping = () => 
-//     inquirer
-//         .prompt([
-//             {
-//             name: "fileName",
-//             message: "File name to store the scrapping result? ",
-//             },
-//         ])
-//         .then((answers) => {
-//             let keyWord = answers.fileName;
-//             scrapp(keyWord).catch((error) => {
-//                 console.error('Error:', error);
-//             });
-//         });
-
-// startScrapping()
 
 export { scrapp };

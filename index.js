@@ -1,5 +1,10 @@
+import { writeSrappingResult } from "./src/utils/files.js";
 import { scrapp } from "./src/webScrapping.js";
 import inquirer from "inquirer";
+
+const processScrappingResult = (result, fileName) => {
+    return writeSrappingResult(result, fileName)
+}
 
 const startScrapping = () => 
     inquirer
@@ -10,9 +15,10 @@ const startScrapping = () =>
             },
         ])
         .then((answers) => {
-            let keyWord = answers.fileName;
-            scrapp(keyWord).catch((error) => {
-                console.error('Error:', error);
+            const fileName = answers.fileName;
+            scrapp()
+                .then((result) => processScrappingResult(result, fileName))
+                .catch((error) => {console.error('Error:', error);
             });
         });
 

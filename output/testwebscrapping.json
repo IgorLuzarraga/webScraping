@@ -1,177 +1,182 @@
 [
   {
-    "order": "38268043",
-    "title": "'Reptar', a new CPU vulnerability",
-    "points": "78",
-    "comments": "46"
+    "order": "38259148",
+    "title": "I accidentally a scheme",
+    "points": "112",
+    "comments": "39"
   },
   {
-    "order": "38264641",
-    "title": "GraphCast: AI model for weather forecasting",
-    "points": "293",
-    "comments": "100"
+    "order": "38266773",
+    "title": "Reptar",
+    "points": "453",
+    "comments": "142"
   },
   {
-    "order": "38267739",
-    "title": "Music painted on wall of a Venetian orphanage will be heard 250 years later",
-    "points": "23",
-    "comments": "6"
+    "order": "38272132",
+    "title": "U.S. reenters the nuclear fuel game",
+    "points": "247",
+    "comments": "215"
   },
   {
-    "order": "38260069",
-    "title": "Astronauts drop tool bag into orbit that you can see with binoculars",
-    "points": "54",
-    "comments": "43"
+    "order": "38271702",
+    "title": "ARRL hails FCC action to remove symbol rate restrictions",
+    "points": "138",
+    "comments": "76"
   },
   {
-    "order": "38248758",
-    "title": "Firmware Software Bill of Materials (SBoM) Proposal",
-    "points": "65",
-    "comments": "22"
+    "order": "38272162",
+    "title": "The Architecture of Serverless Data Systems",
+    "points": "62",
+    "comments": "8"
   },
   {
-    "order": "38268737",
-    "title": "CacheWarp: A new software fault attack on AMD SEV-ES and SEV-SNP",
-    "points": "19",
-    "comments": "0"
+    "order": "38271155",
+    "title": "Why do people still use VBA?",
+    "points": "90",
+    "comments": "101"
   },
   {
-    "order": "38267588",
-    "title": "Vehicles with higher, more vertical front ends pose greater risk to pedestrians",
-    "points": "230",
-    "comments": "232"
+    "order": "38270714",
+    "title": "Writing a GPT-4 script to check Wikipedia for the first unused acronym",
+    "points": "131",
+    "comments": "32"
   },
   {
-    "order": "38268271",
-    "title": "Music ControlNet: Multiple Time-Varying Controls for Music Generation",
-    "points": "12",
-    "comments": "2"
-  },
-  {
-    "order": "38265773",
-    "title": "YJIT Is the Most Memory-Efficient Ruby JIT",
-    "points": "58",
-    "comments": "3"
-  },
-  {
-    "order": "38250459",
-    "title": "Placemark is going open source and shutting down",
-    "points": "454",
-    "comments": "107"
-  },
-  {
-    "order": "38264174",
-    "title": "Replacing HLS/Dash – Live Mass Fanout with Media over QUIC",
-    "points": "98",
-    "comments": "63"
-  },
-  {
-    "order": "38261982",
-    "title": "A decade of developing a programming language",
-    "points": "28",
-    "comments": "3"
-  },
-  {
-    "order": "38268462",
-    "title": "Ask HN: How to get back to programming Python?",
-    "points": "30",
-    "comments": "25"
-  },
-  {
-    "order": "38266029",
-    "title": "Prequel (YC W21) Is Hiring a Sr Engineer to Build B2B Data Sharing",
+    "order": "38274056",
+    "title": "Gym Class VR (YC W22 – Top Sports VR Game) Hiring Lead Back End Engineer",
     "points": null,
     "comments": "0"
   },
   {
-    "order": "38261913",
-    "title": "Constraints on physical computers in holographic spacetimes",
-    "points": "101",
-    "comments": "47"
+    "order": "38270552",
+    "title": "Is the reversal curse in LLMs real?",
+    "points": "154",
+    "comments": "94"
   },
   {
-    "order": "38266792",
-    "title": "Mechanism behind aspirin protective effect against colorectal cancer identified",
-    "points": "56",
-    "comments": "15"
+    "order": "38271534",
+    "title": "Detexify: LaTeX Handwriting Symbol Recognition",
+    "points": "85",
+    "comments": "17"
   },
   {
-    "order": "38266216",
-    "title": "Miyazaki's 'The Boy and the Heron' makes clear the world is a fragile place",
-    "points": "91",
-    "comments": "30"
+    "order": "38262628",
+    "title": "Scientist: A Ruby library for carefully refactoring critical paths",
+    "points": "71",
+    "comments": "12"
   },
   {
-    "order": "38263294",
-    "title": "A Lot of Damage in Grindavík",
-    "points": "277",
-    "comments": "132"
+    "order": "38261982",
+    "title": "A decade of developing a programming language",
+    "points": "213",
+    "comments": "105"
   },
   {
-    "order": "38262196",
-    "title": "Footsteps of pi",
-    "points": "39",
-    "comments": "19"
+    "order": "38274427",
+    "title": "Sam Altman on X: \"we are pausing new ChatGPT Plus sign-ups for a bit\"",
+    "points": "16",
+    "comments": "9"
   },
   {
-    "order": "38268470",
-    "title": "LLMs and the End of Programming – CS50 Tech Talk with Dr. Matt Welsh [video]",
-    "points": "33",
-    "comments": "23"
+    "order": "38270265",
+    "title": "Inko Programming Language",
+    "points": "124",
+    "comments": "43"
   },
   {
-    "order": "38263435",
-    "title": "Backblaze Drive Stats for Q3 2023",
-    "points": "205",
-    "comments": "46"
+    "order": "38259991",
+    "title": "Thermal transistors handle heat with no moving parts",
+    "points": "46",
+    "comments": "33"
   },
   {
-    "order": "38263934",
-    "title": "Ultra-white ceramic cools buildings with record-high 99.6% reflectivity",
-    "points": "132",
-    "comments": "102"
+    "order": "38262425",
+    "title": "Quitting the full-time poker scene",
+    "points": "92",
+    "comments": "82"
   },
   {
-    "order": "38255808",
-    "title": "Designing a programming language to speedrun Advent of Code",
-    "points": "202",
-    "comments": "63"
-  },
-  {
-    "order": "38262775",
-    "title": "Lapce Editor 0.3",
-    "points": "187",
-    "comments": "77"
-  },
-  { "order": "38266773", "title": "Reptar", "points": "68", "comments": "4" },
-  {
-    "order": "38269460",
-    "title": "But What Do We Do If Google Is Legitimately Just a Better Search Engine?",
-    "points": "4",
-    "comments": "1"
-  },
-  {
-    "order": "38262315",
-    "title": "Blender 4.0 release notes",
-    "points": "596",
-    "comments": "194"
-  },
-  {
-    "order": "38265714",
-    "title": "Photos of Roger Penrose’s journal",
-    "points": "75",
+    "order": "38259100",
+    "title": "Julia Child's Culinary Notes",
+    "points": "55",
     "comments": "14"
   },
   {
-    "order": "38257794",
-    "title": "Starship will attempt a launch this Friday",
-    "points": "653",
-    "comments": "793"
+    "order": "38266923",
+    "title": "Unix Time reaches 1.7 billion",
+    "points": "228",
+    "comments": "117"
   },
   {
-    "order": "38263786",
-    "title": "PyPI has completed its first security audit",
-    "points": "88",
+    "order": "38263779",
+    "title": "How to use generative AI for historical research: Four real-world case studies",
+    "points": "21",
     "comments": "13"
+  },
+  {
+    "order": "38274212",
+    "title": "What If Google Wasn't the Default?",
+    "points": "11",
+    "comments": "8"
+  },
+  {
+    "order": "38262251",
+    "title": "Four Kinds of Optimisation",
+    "points": "87",
+    "comments": "33"
+  },
+  {
+    "order": "38273608",
+    "title": "Haiku Activity and Contract Report, October 2023",
+    "points": "23",
+    "comments": "2"
+  },
+  {
+    "order": "38266387",
+    "title": "Kathleen Sully, the Vanished Novelist (2022)",
+    "points": "65",
+    "comments": "5"
+  },
+  {
+    "order": "38268958",
+    "title": "Bpftime: Userspace eBPF runtime for fast Uprobe and Syscall hook and Plugins",
+    "points": "72",
+    "comments": "7"
+  },
+  {
+    "order": "38272495",
+    "title": "Beyond Memorization: Violating privacy via inference with LLMs",
+    "points": "69",
+    "comments": "37"
+  },
+  {
+    "order": "38264641",
+    "title": "GraphCast: AI model for weather forecasting",
+    "points": "517",
+    "comments": "165"
+  },
+  {
+    "order": "38270446",
+    "title": "Ara2: RVV 1.0 Compliant Open-Source Processor",
+    "points": "44",
+    "comments": "0"
+  },
+  {
+    "order": "38267739",
+    "title": "Music painted on wall of a Venetian orphanage will be heard 250 years later",
+    "points": "96",
+    "comments": "31"
+  },
+  {
+    "order": "38273999",
+    "title": "Curl on 100 Operating Systems",
+    "points": "15",
+    "comments": "0"
+  },
+  {
+    "order": "38262900",
+    "title": "Around The World, Part 1: Continents",
+    "points": "30",
+    "comments": "3"
   }
 ]

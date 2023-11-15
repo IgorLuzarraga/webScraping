@@ -1,7 +1,7 @@
 import fs from "fs";
 
 // Write the scrapping results in a file
-const writeSrappingResult = (results, keyWord) => {
+const writeSrappingResult = (results, fileName) => {
     const isNotEmpty = (obj) => Object.keys(obj).length !== 0;
     const itemsClean = results.filter(isNotEmpty);
 
@@ -16,7 +16,7 @@ const writeSrappingResult = (results, keyWord) => {
     }
 
     fs.writeFile(
-        `${outputPath}/${keyWord.replace(" ", "").toLowerCase()}.json`,
+        `${outputPath}/${fileName.replace(" ", "").toLowerCase()}.json`,
         dataString,
         (err) => {
             if (err) {
